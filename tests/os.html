@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../src/fne.js"></script>
+		<script>
+		F.onReady(function() {
+			// List of "is" tests
+			var tests = [
+				'isStrict',
+				'isOpera',
+				'isChrome',
+				'isWebKit',
+				'isSafari',
+				'isSafari2',
+				'isSafari3',
+				'isSafari4',
+				'isGecko',
+				'isGecko2',
+				'isGecko3',
+				'isIE',
+				'isIE7',
+				'isIE8',
+				'isIE9',
+				'isIE9Compat',
+				'isIE10',
+				'isIE10Compat',
+				'isIE11',
+				'isAndroid',
+				'isAndroidPhone',
+				'isiPhone',
+				'isiPad',
+				'isiOS',
+				'isIE6',
+				'isBorderBox',
+				'isWindows',
+				'isMac',
+				'isAir',
+				'isLinux',
+				'isSecure',
+			];
+
+			var i;
+			var yes = new F.Template([
+				'<strong>{title}</strong>: ',
+					'<em style="color: #0e0">Yes</em>',
+				'</strong><br/>'
+			].join(''));
+
+			var no = new F.Template([
+				'<strong>{title}</strong>: ',
+					'<em style="color: #d00">No</em>',
+				'</strong><br/>'
+			].join(''));
+
+			for(i = tests.length; i--;)
+			{
+				if(F[tests[i]])
+					yes.append(F.getBody(), {title: tests[i]});
+				else
+					no.append(F.getBody(), {title: tests[i]});		
+			}
+		});
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
