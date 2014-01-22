@@ -10289,3 +10289,11 @@ F.encode = F.util.JSON.encode;
  * @method decode
  */
 F.decode = F.util.JSON.decode;
+
+/**
+ * Creates a backwards-compatability for Ext
+ */
+if(F_COMPAT)
+{
+	window.Ext = F;
+}
