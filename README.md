@@ -32,6 +32,39 @@ Most everything is just like Ext Core at the moment, with `Ext` becoming `F`
     F.get('some-el');
     F.Ajax.request({...});
 
+Features
+===
+One of the goals of FNE is to modernize a library that was left unchanged since version 3.1.0, while the commerical
+and robust version is now getting into the later years of it's 4.x release. Some of the features currently available
+include more `.is\*` methods:
+
+	// IE updates
+	isIE9
+	isIE9Compat
+	isIE10
+	isIE10Compat
+	isIE11
+
+	// Mobile updates
+	isAndroid
+	isAndroidPhone
+	isiOS
+	isiPad
+	isiPhone
+
+Planned features include session handling, history support, and localStorage; to name a few.
+
+Changelog
+===
+Version 0.1
+ * Officially give it a version #
+
+Version 0
+ * Add F\_COMAPT flag for Ext backward-compatability
+
+Before Version 0
+ * Added a number of `F.is\*` helpers
+
 Why Another Framework???
 ---
 I absolutely love working with Ext Core for doing my general JS work, but it's

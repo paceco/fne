@@ -33,7 +33,7 @@ F = {
      * The version of the framework
      * @type String
      */
-    version : '3.1.0'
+    version : '0.1'
 };
 
 /**
